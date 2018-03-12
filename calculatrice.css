@@ -1,0 +1,64 @@
+#cadre {
+  display: flex;
+  border: 2px;
+  border-color: black;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  height: 200px;
+  justify-content: space-around;
+}
+
+h1 {
+  color: #AA3939;
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+
+}
+
+#resulat {
+  display: table-cell;
+  border: 1px;
+  color: black;
+  position: fixed;
+  disabled: disabled;
+  width: 300px;
+  height: 200px;
+
+}
+
+.ligne1 {
+  display: flex;
+  flex-direction: row;
+
+}
+.touche {
+background: #772424;
+color: white;
+cursor: pointer;
+}
+.touche:hover {
+  background: #C63E3E;
+}
+
+
+.ligne2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.ligne3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.ligne4 {
+  display: flex;
+  flex-direction: row;
+}
+
+.ligne5 {
+  display: flex;
+  flex-direction: row;
+}

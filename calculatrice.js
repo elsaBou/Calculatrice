@@ -5,9 +5,25 @@ document.getElementById('monbouton').onclick = function() {
 };
 */
 document.getElementById("egal").onclick = function egal() {
-  var x= parseInt(document.getElementByClass("touche").value);
-  var resultatFinal= eval(valeur);
-  document.getElementById("resultat").value = valeur + "=" + resultatFinal;
+  let valeur = document.getElementById("resultat").value
+  valeur = valeur.replace('x', '*')
+  valeur = valeur.replace('÷', '/')
+
+  let resultatFinal
+  if(/\/ [0]/g.test(valeur)) {
+    // Operation interdite
+    resultatFinal = "NaN"
+  } else {
+    resultatFinal = eval("" + valeur)
+  }
+
+  document.getElementById("resultat").value = resultatFinal
+}
+
+function chiffre(nombre) {
+  var x= document.getElementById(nombre).value;
+  var valeur= document.getElementById("resultat").value;
+  document.getElementById("resultat").value = valeur + x;
 }
 
 
